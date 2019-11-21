@@ -16,7 +16,7 @@ class CarService {
 
 
   constructor() {
-    console.log("hello from car service")
+
   }
 }
 

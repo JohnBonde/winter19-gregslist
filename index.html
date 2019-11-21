@@ -46,6 +46,44 @@
         <div id="cars" class="row bg-secondary justify-content-center">
 
         </div>
+        <div class="row justify-content-center">
+            <div class="col-4 border bg-info rounded shadow-lg mt-3">
+                <form class="text-left p-3" onsubmit="app.housesController.addHouse(event)">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" name="city" class="form-control" placeholder="Enter the city..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" name="state" class="form-control" placeholder="Enter the state..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="valued">Price</label>
+                        <input type="number" name="valued" class="form-control" placeholder="Enter the price..."
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Square Feet</label>
+                        <input type="number" name="size" class="form-control" placeholder="Enter the square footage..."
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="beds">Bedrooms</label>
+                        <input type="number" name="beds" class="form-control" placeholder="Number of bedrooms..."
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="baths">Bathrooms</label>
+                        <input type="number" name="baths" class="form-control" placeholder="Number of bathrooms..."
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row bg-secondary justify-content-center" id="houses">
+
+        </div>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
